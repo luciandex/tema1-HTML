@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Această pagină a fost creată pentru îndeplinirea cerințelor temei nr. 1 din modulul 1 Web developer CREDIS.">
+    <meta name="author" content="Marius Constantinescu">
+    <title>Card & Contact</title>
+</head>
+<body>
+<div>
+    <fieldset itemprop="menu title">
+        <a id="intro" href="#businesscard">Carte de vizită</a>
+        <br>
+        <a href="#contactform">Formular de contact</a>
+        <h3 align="center">Tema nr. 1 HTML</h3>
+    </fieldset>
+</div>
+
+<div itemscope itemtprop="business card" id="businesscard">
+    <fieldset itemprop="business card">
+        <h5><strong>Carte de vizită</strong></h5>
+        <table border=3 bordercolor="#0000hh" bordercolorlight="#88CCFF" bordercolordark="#0000CC">
+            <tr>
+                <td bgcolor="#f0f0f0">
+                <span>
+                    <img itemprop="logo"
+                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu-iQZpslfRYvS24KXNWRHpz80gR-bA2yuAwRVMiwaPoVPT4-E&amps"
+                         align="left" width="75px" height="55px" alt="logo"/>
+                    <strong>&ensp; Dezvoltare Web S.R.L &emsp;&emsp;&emsp;&emsp;&emsp;</strong>
+                    <img itemprop="motto image" src="https://designmodo.com/wp-content/uploads/2013/06/WEBARQ.jpg"
+                         align="right" width="150px" height="75px" alt="motto"/>
+                </span>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div align="center">
+                        <strong>Marius Constantinescu</strong>
+                        <br>
+                        <em>General manager</em>
+                    </div>
+                    <br>
+                    <span itemprop="contact data">
+                    <img src="https://i.postimg.cc/m1kPMpCs/contact.png" width="95px" height="95px" align="right"
+                         alt="contact"/>
+                    <ul type="none">
+                        <li>&nbsp;&#9743;&nbsp;<a itemprop="tel" href="tel:+40789012345">+4 0789 012 345</a></li>
+                        <li>&nbsp;&#9993;&nbsp;<a itemprop="email" href="mailto:marius.constantinescu@webdev.ro">marius.constantinescu@dezwebsrl.ro</a>
+                        </li>
+                        <li>&#127760;&nbsp;<a itemprop="url" href="https://www.dezvoltarewebsrl.ro/">www.dezvoltarewebsrl.ro</a>
+                        </li>
+                    </ul>
+                </span>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</div>
+
+<div itemscope itemprop="contact form" id="contactform">
+    <h5><strong>Formular de contact</strong></h5>
+    <p>Pentru a intra în legătură cu noi, vă rugăm să completați formularul de mai jos. <br>
+        Câmpurile marcate cu * sunt obligatorii.</p>
+    <form>
+        <fieldset>
+            <legend itemid="contact-us">Contactează-ne</legend>
+            <p>Nume*:
+                <input required type="text" size="40" placeholder="Introduceți numele" aria-valuemax="20"></p>
+            <p>Email* &#9993;&nbsp;:
+                <input required type="email" size="40" placeholder="example@email.com"
+                       aria-valuemax="30" name="email"></p>
+            <p>Site web &#127760;&nbsp;:
+                <input type="url" size="40" placeholder="www.website.com" aria-valuemax="30"></p>
+            <p>Telefon &#9743;&nbsp;:
+                <input type="tel" size="38" placeholder="Număr telefon începând cu prefixul +40"
+                       pattern="[+]{1}[4]{1}[0]{1}[0-9]{3}[0-9]{3}[0-9]{3}" name="phone number"></p>
+            <p>Subiect:
+                <input type="text" size="38" placeholder="Introduceți un subiect" aria-valuemax="50" name="subject">
+            </p>
+            <p>Mesaj* &#9779; :
+                <br>
+                <textarea required spellcheck="true" minlength="20"
+                          placeholder="Introduceți mesajul dumneavoastră aici" name="message"></textarea></p>
+            <p>Încarcă document suplimentar: <input type="file" name="upload file"></p>
+            <p>Sunt de acord cu prelucrarea datelor cu caracter personal:
+                <input type="checkbox" value="da">Da <input type="checkbox" value="nu">Nu</p>
+            <p><input type="submit" value="Trimite mesajul"> &ensp; <input type="reset"
+                                                                           value="Șterge completările"></p>
+            <p>Vă mulțumim pentru interesul acordat serviciilor noastre. &nbsp; &#128578; </p>
+            <p><a href="#intro">Întoarcere la începutul paginii</a></p>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
